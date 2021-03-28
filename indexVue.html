@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <div id="condition">
+        <h2 v-if="visibility">Lorem ipsum dolor sit amet.</h2>
+    </div>
+
+    <div id="loop">
+        <ol>
+            <li v-for='car in cars'>{{car.name}}</li>
+        </ol>
+    </div>
+
+
+<script src="vue1st.js"></script>
+
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        name: 'VueComponentName',
+        data:{
+            message: 'Hello inner Vue!'
+        }
+    });
+    new Vue({
+        el: '#loop',
+        name: 'loop',
+        data: {
+            cars: [{name: 'BMW'},
+                {name: 'Volkswagen'},
+                {name: 'Seat'}  
+            ]
+        }
+    })
+</script>
+</body>
+</html>
