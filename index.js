@@ -8,3 +8,7 @@ var persons = [
 	{ name: "TEST 2", surname: "002", age: 30 },
 
 ]
+
+var arr01=[
+	{Name : 'x'}
+	]
