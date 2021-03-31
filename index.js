@@ -12,3 +12,5 @@ var persons = [
 var arr01=[
 	{Name : 'x'}
 	]
+
+var arr02 = []
